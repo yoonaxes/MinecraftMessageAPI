@@ -42,6 +42,20 @@ public class MessageBuilder {
         return this;
     }
 
+    public MessageBuilder withVariable(String variable, String replacement) {
+        return this.withVariable(null, variable, replacement);
+    }
+
+    public MessageBuilder withVariable(String prefix, String variable, String replacement) {
+        for(int i = 0; i < messages.length; ++i) {
+            messages[i] = messages[i].replace(
+                    VariableUtil.getVariableString(prefix, variable),
+                    replacement
+            );
+        }
+        return this;
+    }
+
     public void send(CommandSender commandSender) {
         for(String message : messages)
             commandSender.sendMessage(message);
