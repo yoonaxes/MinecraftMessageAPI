@@ -40,6 +40,12 @@ public class MessageLocationVariable implements MessageObjectVariable<Location> 
         map.put("yy", VariableUtil.DOUBLE_FORMAT.format(y));
         map.put("zz", VariableUtil.DOUBLE_FORMAT.format(z));
 
+        map.put("world",
+                location.getWorld() == null
+                        ? "world"
+                        : location.getWorld().getName()
+        );
+
         return map;
     }
 }

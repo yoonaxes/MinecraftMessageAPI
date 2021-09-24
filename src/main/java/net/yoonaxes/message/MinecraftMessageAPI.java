@@ -1,7 +1,7 @@
 package net.yoonaxes.message;
 
-import net.yoonaxes.message.translator.ColorTranslator;
-import net.yoonaxes.message.translator.impl.DefaultColorTranslator;
+import net.yoonaxes.translator.ColorTranslator;
+import net.yoonaxes.translator.impl.DefaultColorTranslator;
 import org.bukkit.plugin.Plugin;
 
 public final class MinecraftMessageAPI {

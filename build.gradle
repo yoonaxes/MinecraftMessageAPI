@@ -4,10 +4,14 @@ plugins {
 }
 
 group = 'net.yoonaxes'
-version = '0.2'
+version = '0.3'
 
 repositories {
     mavenCentral()
+    maven {
+        name = 'yoonaxes-maven'
+        url = 'https://maven.yoonaxes.pl/'
+    }
     maven {
         name = 'spigotmc-repo'
         url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
@@ -15,7 +19,11 @@ repositories {
 }
 
 dependencies {
-    compileOnly 'org.spigotmc:spigot-api:1.17.1-R0.1-SNAPSHOT'
+
+    compileOnly group: 'org.spigotmc', name: 'spigot-api', version: '1.17.1-R0.1-SNAPSHOT'
+
+    implementation group: 'net.yoonaxes', name: 'minecraftcolortranslatorapi', version: '1.0'
+
 }
 
 def targetJavaVersion = 8
