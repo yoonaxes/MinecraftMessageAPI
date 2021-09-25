@@ -11,5 +11,9 @@ public interface MessageVariable {
                 .toUpperCase();
     }
 
+    /**
+     * Get an replacement map for variable.
+     * @return Replacement HashMap<String, String>
+     */
     HashMap<String, String> getReplacementMap();
 }
