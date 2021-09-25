@@ -22,7 +22,7 @@ dependencies {
 
     compileOnly group: 'org.spigotmc', name: 'spigot-api', version: '1.17.1-R0.1-SNAPSHOT'
 
-    implementation group: 'net.yoonaxes.minecraft', name: 'colortranslator', version: '1.0'
+    implementation group: 'net.yoonaxes.minecraft', name: 'colortranslatorapi', version: '1.0'
 
 }
 
@@ -44,11 +44,24 @@ tasks.withType(JavaCompile).configureEach {
 
 publishing {
     publications {
-        maven(MavenPublication) {
-            groupId = group
-            artifactId = 'messagebuilder'
-            version = version
-
+        mavenJava(MavenPublication) {
+            pom {
+                name = 'messageapi'
+                artifactId = 'messageapi'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'yoonaxes'
+                        name = 'yoonaxes'
+                        email = 'yoonaxes@gmail.com'
+                    }
+                }
+            }
             from components.java
         }
     }
@@ -58,4 +71,3 @@ publishing {
         }
     }
 }
-
