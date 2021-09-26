@@ -46,3 +46,5 @@ dependencies {
 **·** [Download MessageAPI-0.5.jar](https://github.com/yoonaxes/MinecraftMessageAPI/releases/download/0.5/MessageAPI-0.5.jar)
 
 **·** [Download other release](https://github.com/yoonaxes/MinecraftMessageAPI/releases/)
+
+<hr />
