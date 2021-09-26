@@ -9,7 +9,7 @@ An open source Bukkit API for comfortable creating and sending messages with you
 
 </div>
 
-## Initial Setup:
+## Initial Setup
 Initial setup to start using MessageAPI.
 
 ##### Maven:
