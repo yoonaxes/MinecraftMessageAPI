@@ -23,7 +23,7 @@ Initial setup to start using MessageAPI.
 <dependency>
   <groupId>net.yoonaxes.minecraft</groupId>
   <artifactId>messageapi</artifactId>
-  <version>0.5</version>
+  <version>0.6</version>
 </dependency>
 ```
 
@@ -38,12 +38,12 @@ repositories {
 }
 
 dependencies {
-    implementation 'net.yoonaxes.minecraft:messageapi:0.5'
+    implementation 'net.yoonaxes.minecraft:messageapi:0.6'
 }
 ```
 
 ##### Download:
-**·** [Download MessageAPI-0.5.jar](https://github.com/yoonaxes/MinecraftMessageAPI/releases/download/0.5/MessageAPI-0.5.jar)
+**·** [Download MessageAPI-0.6.jar](https://github.com/yoonaxes/MinecraftMessageAPI/releases/download/0.6/MessageAPI-0.6.jar)
 
 **·** [Download other release](https://github.com/yoonaxes/MinecraftMessageAPI/releases/)
 
